@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Landing Page</title>
+  <style>
+    /* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+header {
+  background: #222;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: #2575fc;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.about {
+  padding: 60px 0;
+  text-align: center;
+}
+
+
+.features {
+  background-color: #eef2f3;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.feature-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  min-width: 200px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+h1{
+    text-align: center;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>MyLanding</h1>
+    
+      <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to My Landing Page</h2>
+      <p>Your solution starts here. Simple. Clean. Effective.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We create high-quality websites that are fast, responsive, and user-friendly.</p>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="feature-boxes">
+        <div class="box">🚀 Fast</div>
+        <div class="box">📱 Responsive</div>
+        <div class="box">🎨 Customizable</div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <p>Contact us: email@example.com</p>
+      <p>© 2025 MyLanding. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
